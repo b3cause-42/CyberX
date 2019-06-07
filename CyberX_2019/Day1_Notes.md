@@ -30,8 +30,8 @@
 1. Signup for a Splunk Account (Free)
 2. Download Splunk software (Free)
    1. Windows (64/32)
-   2. Linux(64bit, .rpm/.tgz/.deb)
-   3. MacOS(OSX 10.10/11/12, .dmg/.tgz)
+   2. Linux (64bit, .rpm/.tgz/.deb)
+   3. MacOS (OSX 10.10/11/12, .dmg/.tgz)
 3. Verify Email for Splunk Account
 4. Install Splunk Software
 5. Install Splunk Add-On (You can find this by...)
@@ -50,25 +50,31 @@
 6. Set Splunk up on local machine
    1. Linux/MacOS
        1. Open up Terminal
-       2. Navigate to /Applications/Splunk/etc/apps/Splunk_TA_nix
-       3. vi inputs.conf
-       4. exit vi ()
-       5. set Library/Logs = 0 (i.e. False)
-       6. Navigate to (Restart Path)
-       7. Open up downloaded splunk app via GUI (this will open browser)
+       2. Navigate to `/Applications/Splunk/etc/apps/Splunk_TA_nix`
+       3. `vi inputs.conf`
+       4. exit vi 
+            1. (`how to do that`)
+       5. set `Library/Logs` = 0 
+            1. (i.e. False)
+       6. Navigate to `(Restart Path)`
+       7. Open up downloaded splunk app via GUI 
+            1. (this will open browser)
        8. Navigate to the Search & Reporting App
-       9. Search: index=main
+       9. Search: `index=main`
        10. This is everything your local computer is logging, to find other items search other strings
    2. Windows
        1. Open up CMD Prompt
-       2. Navigate to `/Applications/Splunk/etc/apps/Splunk_TA_ni`
-       3. vi inputs.conf
-       4. exit vi ()
-       5. set Library/Logs = 0 (i.e. False)
-       6. Navigate to (Restart Path)
-       7. Open up downloaded splunk app via GUI (this will open browser)
+       2. Navigate to `/Applications/Splunk/etc/apps/Splunk_TA_nix`
+       3. `vi inputs.conf`
+       4. exit vi 
+            1. (`how to do that`)
+       5. set `Library/Logs` = 0 
+            1. (i.e. False)
+       6. Navigate to `(Restart Path)`
+       7. Open up downloaded splunk app via GUI 
+            1. (this will open browser)
        8. Navigate to the Search & Reporting App
-       9. Search: index=main
+       9. Search: `index=main`
        10. This is everything your local computer is logging, to find other items search other strings
 
 
