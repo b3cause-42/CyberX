@@ -61,7 +61,7 @@
        10. This is everything your local computer is logging, to find other items search other strings
    2. Windows
        1. Open up CMD Prompt
-       2. Navigate to /Applications/Splunk/etc/apps/Splunk_TA_nix
+       2. Navigate to `/Applications/Splunk/etc/apps/Splunk_TA_ni`
        3. vi inputs.conf
        4. exit vi ()
        5. set Library/Logs = 0 (i.e. False)
