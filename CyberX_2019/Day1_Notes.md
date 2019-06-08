@@ -77,12 +77,43 @@
        8. Navigate to the Search & Reporting App
        9. Search: `index=main`
        10. This is everything your local computer is logging, to find other items search other strings
-
+- - - - -
+# SPLUNK Use Cases
+1. What Kind of Data do we have?
+   1. tstats count where index=* groupby index, sourcetype
+2. Correlate in Place.
+   1. Gather a pool of data.
+   2. use a table to form the data for easy numeric tests.
+   3. Perform tests to make decisions.
+3. why is my search slow
+   1. Volume of data
+      1. Limit the Time range
+      2. Large and/or 
+4. Search processing language
+   1. Search & Filter | Munge | report | cleanup
+      1. sourcetype=access*
+      2. | eval KB=bytes/1024
+      3. | stats sum(KB) dc(clientip)
+      4. | rename sum(KB) AS "Total MB" dc(clientip) AS "Unique Customers"
+5. Search Construction
+   1. Be Specific
+   2. Use Unique Terms
+   3. Avoid NOTs use AND/OR
+   4. Avoid Joins
+      1. foo | stats count by unix | joing[search bar |stats count by qux]
+      2. foo OR bar | stats count(eval(searchmatch....
 - - - - -
 ## Additional Useful Add-Ons
 * Python for Scientific Computing (for Mac)
+* Pulse Connect Secure Add-on for Splunk
 
 ## Additional Useful Apps
 * Monitoring Docker - Metrics and Log Forwarding
 * Monitoring Kubernetes - Metrics and Log Forwarding
 * Splunk Machine Learning Toolkit
+* VersionControl For Splunk
+* Splunk Security Essentials
+
+- - - - -
+## Additional Web Resources
+* https://www.malwarearchaeology.com/
